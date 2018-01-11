@@ -1,0 +1,110 @@
+<html>
+<body>
+<h1>MFC Multithreaded Recording, Saving to WAV files and Playback of Sound</h1>
+<h2>by Paul Cheffers</h2>
+<br>
+
+The following classes, CRecordSound and CPlaySound, record 
+sound and play PCM sound simultaneously.  An example dialog-based
+program is provided that records, saves to disk and then echos sound.  
+This example also
+contains two more classes, CWriteSoundFile and CPlayMMSound.  
+CWriteSoundFile receives sound buffers from CRecordSound and writes them
+to a WAV disk file.  CPlayMMSound opens these WAV files and plays them to
+the sound device.  All sound files are currently PCM samples.  Be careful
+with the sample application as it records a PCM WAV file.  The PCM WAV file
+can grow at 16 kilobytes a second, so keep the recorded samples short.
+  <br><br>
+With these 
+classes, sound can be both recorded and played at the same time.
+Continuous sound can be monitored and upon appropriate
+queues, sound can be played back.  Simple sound recognition 
+could also, for instance, be put into CRecordSound.  The multithreading
+allows other actions to take place while sound recording and playback
+go on.  As well, recorded sound can be saved to WAV files and played back. 
+<br>
+<br>
+CRecordSound can be invoked by the following code:
+<br><br>
+	m_pRecordSound = new CRecordSound();<br>
+	m_pRecordSound->CreateThread();<br><br>
+CPlaySound can be invoked by the following code:
+<br><br>
+	m_pPlaySound = new CPlaySound();<br>
+	m_pPlaySound->CreateThread();<br><br>
+To initiate sound recording from CRecordSound do the following:
+<br><br>
+m_RecordThread->
+PostThreadMessage(WM_RECORDSOUND_STARTRECORDING, 0, 0L);
+<br><br>
+To stop recording sound: <br>
+<br>
+m_RecordThread->
+PostThreadMessage(WM_RECORDSOUND_STOPRECORDING,0,0);<br>
+<br><br>
+Similar calls begin playing and stopping of sound:<br><br>
+m_PlayThread->
+PostThreadMessage(WM_PLAYSOUND_STARTPLAYING,0,0);<br>
+<br><br>
+m_PlayThread->
+PostThreadMessage(WM_PLAYSOUND_STOPPLAYING,0,0);<br>
+<br><br>
+The CRecordSound class ferries sound blocks that have been 
+recorded over to the CPlaySound class.  The CRecordSound 
+class is notified of the CPlaySound thread via:<br><br>
+m_RecordSound->PostThreadMessage(WM_RECORDSOUND_SOUNDPLAYER, 0,(LPARAM)m_PlaySound);<br>
+<br><br>
+For both CRecordSound and CPlaySound, the virtual member,<br><br>
+ProcessSoundData(short int* sound, DWORD dwSamples);<br><br>
+can be overridden to get access to the actual sound data.
+<br><br>
+CWriteSoundFile has the following messages associated with it:
+<br><br>
+m_WriteSoundThread->PostThreadMessage(WM_WRITESOUNDFILE_FILENAME,0,(LPARAM)
+(PWRITESOUNDFILE)&structWriteSoundFile); 
+<br>
+m_WriteSoundThread->PostThreadMessage(WM_WRITESOUNDFILE_WRITEBLOCK,0,(LPARAM)(WAVEHDR)pWaveHdr); 
+<br>
+m_WriteSoundThread->PostThreadMessage(WM_WRITESOUNDFILE_CLOSEFILE,0,0);
+<br><br>
+To write a WAV file you must provide a WRITESOUNDFILE structure.
+The WRITESOUNDFILE structure has the following definition:
+<br><br>
+typedef struct writesoundfile_tag { <br>
+	char lpszFileName[MAX_PATH];  <br>
+	WAVEFORMATEX waveFormatEx;    <br>
+	TCHAR buffer[100];            <br>
+} WRITESOUNDFILE, *PWRITESOUNDFILE; <br>
+<br>
+You must provide the filename, then the WAVEFORMATEX structure that defines
+the file to be written.  With nonPCM formats there are extra style specific
+information at the end of the structure, hence the 100 bytes of buffer space.
+
+<br><br>
+This class receives WAVEHDR blocks created by CRecordSound.  In the example
+application, pushing the "Start Recording" button will echo sound and
+save it to a "sound.wav" file at the same time.
+<br><br>
+CPlayMMSound will read a WAV file and play it to the sound device.  It uses
+a pointer to a CPlaySound thread to acheive this.  Its messages are:
+<br><br>
+m_pPlayMMSound->PostThreadMessage(WM_PLAYMMSOUND_PLAYFILE,0,(LPARAM)"sound.wav")
+<br> 
+m_pPlayMMSound->PostThreadMessage(WM_PLAYMMSOUND_CLOSEFILE,0,0);
+<br> 
+m_pPlayMMSound->PostThreadMessage(WM_PLAYMMSOUND_PLAYSOUNDPTR,0,(LPARAM)
+(CPlaySound*)m_pPlaySound);
+<br>
+The WM_PLAYMMSOUND_PLAYFILE messages opens a WAV file for processing.  It 
+automatically sends off a worker thread to play the file.
+<br>
+You must provide a CPlaySound thread for this to work.  That is the job of
+the WM_PLAYMMSOUND_PLAYSOUNDPTR message.  You can stop the play at any time
+by the WM_PLAYMMSOUND_CLOSEFILE message.  Currently, CPlaySound is set to
+play around 1.5 seconds ahead of actual heard sound. <br><br>
+ 
+
+<a href=record.zip>Download the sample application here</a>
+
+</body>
+</html>

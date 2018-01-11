@@ -1,0 +1,292 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\CCIDcompare.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CCIDcompare.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 93
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 CCIDcompare"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CCIDcompare Version 0.9.3",IDC_STATIC_AB_VER,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,40,56,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+    LTEXT           "Build On:",IDC_STATIC_AB_BUILD,40,36,119,8
+END
+
+IDD_CCIDCOMPARE_DIALOG DIALOGEX 0, 0, 175, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CCIDcompare"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "选择好数据后点击这里",IDOK,16,65,141,24
+    COMBOBOX        IDC_COMBO1,23,16,50,99,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "端口号：",IDC_STATIC,3,7,31,9
+    COMBOBOX        IDC_COMBO2,111,16,50,88,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "波特率：",IDC_STATIC,91,7,30,9
+    LTEXT           "数据源：",IDC_STATIC,7,36,32,9
+    EDITTEXT        IDC_EDIT2,18,46,124,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON1,150,45,16,12
+END
+
+IDD_COMPARE_DIALOG DIALOGEX 0, 0, 222, 161
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 15, "黑体", 400, 0, 0x86
+BEGIN
+    EDITTEXT        IDC_EDIT1,50,5,87,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "手机号码：",IDC_STATIC,6,7,42,10
+    EDITTEXT        IDC_EDIT2,13,21,125,93,ES_MULTILINE | NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_LEFTSCROLLBAR
+    PUSHBUTTON      "按钮校验",IDC_BUTTON1,12,117,126,37,NOT WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,142,0,71,155
+    COMBOBOX        IDC_COMBO1,151,15,58,46,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL
+    COMBOBOX        IDC_COMBO3,151,37,58,55,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL
+    PUSHBUTTON      "解锁配置",IDC_BUTTON3,146,114,63,17,NOT WS_TABSTOP
+    LTEXT           "校验方式：",IDC_STATIC,145,5,41,10
+    LTEXT           "SIM卡类型：",IDC_STATIC,145,27,48,10
+    LTEXT           "生产批次：",IDC_STATIC,145,49,48,9
+    EDITTEXT        IDC_EDIT3,152,58,55,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "导出数据(A)...",IDC_BUTTON4,146,95,63,16,NOT WS_TABSTOP
+    PUSHBUTTON      "导入数据(E)...",IDC_BUTTON5,146,74,63,18,NOT WS_TABSTOP
+    PUSHBUTTON      "补打标签(不校验)",IDC_BUTTON6,12,117,126,37
+    PUSHBUTTON      "输入打印",IDC_BUTTON_INPUT,146,133,63,17,NOT WS_TABSTOP
+END
+
+IDD_PASSWORD_DIALOG DIALOGEX 0, 0, 157, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,17,39,50,14,NOT WS_TABSTOP
+    PUSHBUTTON      "取消",IDCANCEL,84,39,50,14,NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,68,16,73,13,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "PASSWORD：",IDC_STATIC,15,17,48,11
+END
+
+IDD_Import_DIALOG DIALOGEX 0, 0, 201, 103
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,144,53,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,144,76,50,14
+    EDITTEXT        IDC_EDIT1,20,13,131,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览...",IDC_BUTTON1,158,13,35,15
+    LTEXT           "文件路径：",IDC_STATIC,7,1,42,9
+    LTEXT           "内部表格名：",IDC_STATIC,7,36,48,9
+    EDITTEXT        IDC_EDIT2,65,33,85,14,ES_AUTOHSCROLL
+    LTEXT           "电话号码在表格内第",IDC_STATIC,7,56,76,10
+    EDITTEXT        IDC_EDIT3,89,54,24,13,ES_AUTOHSCROLL
+    LTEXT           "CCID号在表格内第",IDC_STATIC,7,79,66,10
+    EDITTEXT        IDC_EDIT6,89,77,24,12,ES_AUTOHSCROLL
+    LTEXT           "列",IDC_STATIC,121,56,15,10
+    LTEXT           "列",IDC_STATIC,121,78,15,10
+END
+
+IDD_Outport_DIALOG DIALOGEX 0, 0, 244, 166
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "导出选项"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,24,149,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,147,149,50,14
+    CONTROL         "  序号",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,39,34,39,10
+    CONTROL         "  电话号码",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,39,19,52,10
+    CONTROL         "  IMEI号",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,17,41,12
+    CONTROL         "  SIM卡号",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,155,18,53,8
+    CONTROL         "  地区",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,34,50,10
+    CONTROL         "  生产批次",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,155,33,54,10
+    GROUPBOX        "要导出的项目",IDC_STATIC,23,6,187,43
+    CONTROL         "是否已校验",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,39,71,56,10
+    CONTROL         "生产批次",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,38,89,47,10
+    CONTROL         "地区",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,38,109,32,12
+    EDITTEXT        IDC_EDIT1,129,88,58,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,129,106,58,14,ES_AUTOHSCROLL
+    GROUPBOX        "导出条件",IDC_STATIC,23,58,189,87
+    COMBOBOX        IDC_COMBO1,129,69,60,65,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "导出到新表：",IDC_STATIC,37,129,49,11
+    EDITTEXT        IDC_EDIT5,90,127,98,14,ES_AUTOHSCROLL
+END
+
+IDD_INVALIDCARD_PRINT DIALOGEX 0, 0, 187, 89
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 15, "黑体", 400, 0, 0x86
+BEGIN
+    LTEXT           "TelNum:",IDC_STATIC,7,5,34,9
+    LTEXT           "Imei:",IDC_STATIC,7,25,34,9
+    LTEXT           "Ccid:",IDC_STATIC,7,45,34,9
+    EDITTEXT        IDC_EDIT_INVALID_TEL,46,4,119,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INVALID_IMEI,46,24,119,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INVALID_CCID,46,43,119,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "打印输入信息",IDC_BT_INVALID_PRINT,18,65,64,14
+    PUSHBUTTON      "读Ccid打印",IDC_BT_INVALID_CCID_PRINT,107,65,64,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_CCIDCOMPARE_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 174
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_COMPARE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 219
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_PASSWORD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 150
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_Import_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_Outport_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_INVALIDCARD_PRINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 184
+        BOTTOMMARGIN, 85
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 CCIDcompare(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\CCIDcompare.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

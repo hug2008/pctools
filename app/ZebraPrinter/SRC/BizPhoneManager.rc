@@ -1,0 +1,458 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\BizPhoneManager.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\BizPhoneManager.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_ABOUTBOX DIALOGEX 0, 0, 235, 61
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "版本信息"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    LTEXT           "版权所有 (C) 2008.05.05",IDC_STATIC,40,37,160,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    ICON            IDR_MAINFRAME,IDC_STATIC,12,12,20,20
+    LTEXT           "Laber Zaber 105SL 打印系统",IDC_STATIC,40,11,113,8
+    LTEXT           "版本号: D1.0.5",IDC_ABOUTDLG_VERSION,40,24,124,8
+END
+
+IDD_BIZPHONE_SEETING_SHEET DIALOGEX 0, 0, 489, 299
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Laber Zaber 105SL 打印系统 - 标签打印"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_SETTING_CTRL_TREE,"SysTreeView32",
+                    TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | 
+                    TVS_SHOWSELALWAYS | TVS_TRACKSELECT | TVS_FULLROWSELECT | 
+                    WS_TABSTOP | 0x4800,7,7,90,198,WS_EX_STATICEDGE
+    CONTROL         "",IDC_SETTING_SHEET_PLACEHOLDER,"Static",SS_BLACKFRAME | 
+                    NOT WS_VISIBLE | WS_DISABLED,101,3,383,276
+    LTEXT           "状态提示:",IDC_STATIC_TIPS_STATUS,7,285,46,8
+    LTEXT           "",IDC_CURRENT_STATUS,60,285,252,10
+    PUSHBUTTON      "退出[&X]",ID_SETTING_SHEET_BTN_EXIT,433,281,50,14
+    CONTROL         "",IDC_PIC_GIF_LOGO,"Static",SS_BLACKFRAME,8,207,89,71
+    PUSHBUTTON      "锁定[&L]",ID_SETTING_SHEET_BTN_LOCK,373,281,50,14
+END
+
+IDD_DLG_INPUTPWD DIALOGEX 0, 0, 185, 77
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "密码校验"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_OLDPASS,25,27,137,12,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "确定",IDOK,42,56,50,14
+    PUSHBUTTON      "取消",IDCANCEL,93,56,50,14
+    GROUPBOX        "",IDC_STATIC,0,0,185,76
+    LTEXT           "请输入话机管理超级密码：",IDC_STATIC,26,13,97,8
+END
+
+IDD_DLG_SERIAL DIALOGEX 0, 0, 233, 125
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "注册使用"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "软件注册",IDC_STATIC,7,7,219,90
+    LTEXT           "说明：请将下面显示的客户码提供给该软件的提供者，\r\n      并将获得的注册码输入在下方。",
+                    IDC_STATIC,20,23,194,20
+    LTEXT           "客户码：",IDC_STATIC,32,48,33,8
+    LTEXT           "注册码：",IDC_STATIC,32,67,33,8
+    EDITTEXT        IDC_CUSTOM,73,46,121,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_SERIAL,73,65,121,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "确定",IDOK,124,105,48,13
+    PUSHBUTTON      "退出",IDCANCEL,177,105,48,13
+END
+
+IDD_ATTRIBUTE_RECT DIALOGEX 0, 0, 381, 275
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+END
+
+IDD_PG530_IMEI DIALOGEX 0, 0, 381, 275
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "MODEL:",IDC_ST_IMEI_MODEL,21,15,61,14
+    COMBOBOX        IDC_COMBO1_IMEI_MODEL,109,15,96,118,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Contents:",IDC_ST_IMEI_CONTENTS,21,39,87,15
+    EDITTEXT        IDC_ET_IMEI_MAINSET,41,58,101,14,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_ET_IMEI_HANDSET,41,77,101,14,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_ET_IMEI_ANT,41,97,101,14,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_ET_IMEI_BAT,41,137,101,14,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_ET_IMEI_USER,41,157,101,14,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Color:",IDC_ST_IMEI_MODEL2,20,197,61,14
+    COMBOBOX        IDC_COMBO1_IMEI_COLOR,108,197,96,99,CBS_DROPDOWN | 
+                    WS_VSCROLL
+    LTEXT           "IMEI:",IDC_ST_IMEI,21,221,61,14
+    EDITTEXT        IDC_ET_IMEI_IMEI,107,221,101,14,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "S/NO:",IDC_ST_IMEI2,21,245,42,14
+    EDITTEXT        IDC_ET_IMEI_SNO,165,246,43,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_ET_IMEI_ADA,41,117,101,14,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    COMBOBOX        IDC_COMB_CONTENT_YEAR,68,247,39,13,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMB_CONTENT_MON,118,247,39,13,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Contents & Imei",IDC_STATIC,0,0,381,275
+    CONTROL         177,IDC_ST_CONTENT_TEMPLET,"Static",SS_BITMAP,221,40,133,
+                    141
+    CONTROL         "西班牙文模式",IDC_CHECK_PG530_MMI,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,252,207,92,30
+END
+
+IDD_PG530_CARTONBOX DIALOGEX 0, 0, 381, 275
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Carton box",IDC_STATIC,0,0,381,275
+    LTEXT           "Model:",IDC_ST_CARTON_MODEL,6,19,46,14
+    COMBOBOX        IDC_COMB_CARTON_MODEL,57,21,54,85,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "C/T box ID:",IDC_ST_CARTON_CTBOXID,117,19,55,17
+    EDITTEXT        IDC_EDIT_CARTON_CTID,177,19,55,15,ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Quantity:",IDC_ST_CARTON_COUNT,7,45,48,18
+    COMBOBOX        IDC_COMB_CARTON_QUANTITY,58,49,54,85,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Imei:",IDC_ST_CARTON_IMEI,10,77,41,13
+    LTEXT           "Serial No.:",IDC_ST_CARTON_SNO,197,75,51,14
+    EDITTEXT        IDC_EDIT_CARTON_IMEI,57,75,122,15,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_CARTON_SNO,261,75,68,15,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "",IDC_CARTON_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,40,108,306,130
+    LTEXT           "重打箱号：",IDC_ST_CARTON_REPRINT,84,250,81,20
+    EDITTEXT        IDC_EDIT_CARTON_REPRINT,174,249,99,19,ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Order:",IDC_ST_CARTON_ORDER,118,45,55,17
+    EDITTEXT        IDC_EDIT_CARTON_ORDER,177,45,57,15,ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Zone:",IDC_ST_CARTON_AREA,247,19,35,17
+    EDITTEXT        IDC_EDIT_CARTON_AREA,288,19,68,15,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "",IDC_CHECK_AG169H,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,342,45,11,16
+    LTEXT           "AG-169H(PCO):",IDC_ST_CARTON_AG169H,247,45,85,17
+END
+
+IDD_PHONE_ABSOLUTED_PACK DIALOGEX 0, 0, 381, 275
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "机卡分离",IDC_STATIC,0,0,381,275
+    EDITTEXT        IDC_ED_PAP_IMEI,16,242,179,21,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Imei:",IDC_STATIC,6,232,18,8
+    EDITTEXT        IDC_ED_PAP_BOXID,9,28,151,15,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "BoxId:",IDC_STATIC,4,17,27,8
+    EDITTEXT        IDC_ED_PAP_SYMBOL,126,58,78,15,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Symbol:",IDC_STATIC,121,47,27,8
+    EDITTEXT        IDC_ED_PAP_MODEL,9,58,78,15,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Model:",IDC_STATIC,3,48,27,8
+    EDITTEXT        IDC_ED_PAP_COLOR,125,88,78,15,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Color:",IDC_STATIC,121,78,27,8
+    EDITTEXT        IDC_ED_PAP_WEIGHT,9,88,78,15,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Weight(g):",IDC_STATIC,3,77,41,8
+    EDITTEXT        IDC_ED_PAP_ADDONS,125,118,78,15,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Add-ons:",IDC_STATIC,120,107,31,8
+    EDITTEXT        IDC_ED_PAP_EDITION,9,118,78,15,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Zone:",IDC_STATIC,3,108,31,8
+    EDITTEXT        IDC_ED_PAP_MESTATE,125,148,78,15,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "MEstate:",IDC_STATIC,121,138,32,8
+    EDITTEXT        IDC_ED_PAP_AMOUNT,9,149,78,15,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Amount:",IDC_STATIC,4,137,41,8
+    EDITTEXT        IDC_ED_PAP_PESTATE,125,179,78,15,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "PEstate:",IDC_STATIC,121,167,31,8
+    EDITTEXT        IDC_ED_PAP_REQ,9,179,78,15,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Requisition:",IDC_STATIC,3,168,53,8
+    PUSHBUTTON      "Clean List",IDC_BUT_PAP_CLEAR_LIST,240,241,65,25
+    CONTROL         "Custom1",IDC_CUSTOM_PHONEIMEI_PACK,"MFCReportCtrl",
+                    WS_BORDER | WS_TABSTOP,238,7,140,227
+    EDITTEXT        IDC_ED_PAP_OFORM,10,209,78,15,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "OrderForm:",IDC_STATIC,4,197,53,8
+    PUSHBUTTON      "Query Record",IDC_BUT_PAP_QUERY,308,241,65,25
+    PUSHBUTTON      "Re.Print",IDC_BUT_PAP_RE_PRINT,168,27,36,18
+END
+
+IDD_PACKING_SELETE_DLG DIALOGEX 0, 0, 256, 166
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Query condition setting"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,42,145,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,152,145,50,14
+    EDITTEXT        IDC_EDIT_QCS_BOXID,107,21,117,13,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "BoxId:",IDC_STATIC,23,23,22,10
+    EDITTEXT        IDC_EDIT_QCS_MODEL,107,42,117,13,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Model:",IDC_STATIC,23,44,22,10
+    EDITTEXT        IDC_EDIT_QCS_EDITION,107,62,117,13,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Zone:",IDC_STATIC,23,64,27,10
+    EDITTEXT        IDC_EDIT_QCS_REQ,107,82,117,13,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Requisition:",IDC_STATIC,23,84,43,10
+    EDITTEXT        IDC_EDIT_QCS_OFM,107,102,117,13,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "OderForm:",IDC_STATIC,22,104,43,10
+    EDITTEXT        IDC_EDIT_QCS_DATE,107,120,117,13,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Date:",IDC_STATIC,21,122,43,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,5
+ PRODUCTVERSION 1,0,0,5
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "Desayele Co.Ltd"
+            VALUE "FileDescription", "ZaberPrinter Application"
+            VALUE "FileVersion", "1, 0, 0, 5"
+            VALUE "InternalName", "BizPhoneManager"
+            VALUE "LegalCopyright", "版权所有 (C) 2003－2005"
+            VALUE "OriginalFilename", "ZaberPrinter.exe"
+            VALUE "ProductName", "Laber Zaber 105SL 打印系统 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 5"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_BIZPHONE_SEETING_SHEET, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 484
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 294
+    END
+
+    IDD_DLG_SERIAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_PACKING_SELETE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// IMAGE
+//
+
+IDR_JPG_SPLASH          IMAGE                   "res\\Splash.jpg"
+IDR_GIF_LOGO            IMAGE                   "res\\logo_no_sign.gif"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_PG530CONTENT BITMAP                  "RES\\PG530_Content.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Laber Zaber 105SL 打印系统(&A)..."
+    IDS_DLG_COMMON_CLOSE    "关闭管理系统"
+    IDS_DLG_COMMON_SAVE     "保存输入的数据"
+    IDS_PAGE_IMPORT_LOCAL_MOBILE "导入本地手机号段文件"
+    IDS_PAGE_EXPORT_LOCAL_MOBILE "导出本地手机号段信息"
+    IDS_PAGE_CHANGE_PWD     "更改话机超级密码"
+    IDS_PAGE_CHANGE_PWD_AND_DOWNLOAD "更改密码并下载当前配置到话机"
+    IDS_PAGE_CHANGE_PWD_DOWN_DEFAULT 
+                            "更改密码并下载当前配置到话机并保存为出厂配置"
+    IDS_PAGE_IMPORT_ALLDATA "导入话机配置脚本文件"
+    IDS_PAGE_EXPORT_ALLDATA "导出话机配置脚本文件"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PAGE_LOAD_SETTING   "读取话机当前配置"
+    IDS_PAGE_SAVE_SETTING   "下载当前设置到话机"
+    IDS_PAGE_SAVE_DEFAULT   "保存话机当前设置为出厂设置"
+    IDS_PAGE_RECORVER_DEFAULT "恢复出厂设置为话机当前设置"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Laber Zaber 105SL 打印系统"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\BizPhoneManager.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

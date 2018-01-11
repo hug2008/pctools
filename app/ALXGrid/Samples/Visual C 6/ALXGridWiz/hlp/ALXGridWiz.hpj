@@ -1,0 +1,13 @@
+[OPTIONS]
+TITLE=ALXGRIDWIZ AppWizard Help
+COMPRESS=true
+WARNING=2
+HLP=ALXGridWiz.HLP
+ERRORLOG=ALXGridWiz.LOG
+
+[FILES]
+ALXGridWiz.rtf
+
+[MAP]
+#include <C:\Program Files\Microsoft Visual Studio\VC98\MFC\include\afxhelp.hm>
+#include <ALXGridWiz.hm>

@@ -1,0 +1,35 @@
+ 
+// Commands (ID_* and IDM_*) 
+HID_BUTTON40001                         0x19C41
+HID_BTN_ADDCOL                          0x19C41
+HID_BUTTON40002                         0x19C42
+HID_BUTTON40005                         0x19C45
+HID_BTN_PREVIEWGRID                     0x19C45
+HID_BUTTON40008                         0x19C48
+HID_BTN_DELCOL                          0x19C4D
+HID_BTN_EDITCOL                         0x19C4E
+HID_BTN_MOVEUP                          0x19C50
+HID_BTN_MOVEDOWN                        0x19C51
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_GRIDHEAD                           0x20077
+ 
+// Dialogs (IDD_*) 
+HIDD_PROPPAGE_GENERAL                   0x2007A
+HIDD_PROPPAGE1                          0x2007E
+HIDD_PROPPAGE2                          0x2007F
+HIDD_DIALOG1                            0x2007F
+HIDD_PROPPAGE3                          0x20080
+HIDD_DIALOG2                            0x20080
+HIDD_CUSTOM1                            0x20081
+HIDD_CLASSES                            0x201F4
+HIDD_CLASSES1                           0x201F5
+HIDD_GRIDHEAD                           0x201F6
+HIDD_GRIDSTYLE                          0x201F7
+HIDD_GRIDPREV                           0x201F8
+HIDD_PROPPAGE_ALIGN                     0x201F9
+HIDD_PROPPAGE_CONTROL                   0x201FA
+ 
+// Frame Controls (IDW_*) 

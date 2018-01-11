@@ -1,0 +1,273 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\ThreeItemPacking.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ThreeItemPacking.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "关于 ThreeItemPacking"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ThreeItemPacking Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_THREEITEMPACKING_DIALOG DIALOGEX 0, 0, 399, 228
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | 
+    WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ThreeItemPacking"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,11,202,79,18,NOT WS_TABSTOP
+    LTEXT           "箱     号：",IDC_STATIC01,9,38,57,10
+    EDITTEXT        IDC_EDIT1,136,14,50,12,ES_AUTOHSCROLL
+    LTEXT           "型     号：",IDC_STATIC2,9,67,57,10
+    COMBOBOX        IDC_COMBO2,8,79,89,187,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL
+    LTEXT           "颜     色：",IDC_STATIC3,8,94,57,10
+    COMBOBOX        IDC_COMBO3,8,108,89,187,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL
+    LTEXT           "区     域：",IDC_STATIC4,8,122,57,10
+    COMBOBOX        IDC_COMBO4,8,133,89,187,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL
+    LTEXT           "数     量：",IDC_STATIC5,8,149,57,10
+    COMBOBOX        IDC_COMBO5,8,161,89,187,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL
+    GROUPBOX        "",IDC_STATIC,3,0,99,224
+    GROUPBOX        "             TELNUM                            IMEI                                  CCID",
+                    IDC_STATIC,106,0,286,225
+    EDITTEXT        IDC_EDIT2,204,14,69,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,295,14,88,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | 
+                    WS_BORDER,111,31,276,146
+    LTEXT           "Static06",IDC_STATIC06,109,180,85,15
+    EDITTEXT        IDC_EDIT4,183,180,95,17,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON      "清空列表",IDC_Button1,114,203,80,19,NOT WS_TABSTOP
+    LTEXT           "份     数：",IDC_STATIC6,8,175,57,10
+    COMBOBOX        IDC_COMBO6,8,185,89,187,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL
+    PUSHBUTTON      "打印",IDC_Button2,303,202,83,19,NOT WS_TABSTOP
+    PUSHBUTTON      "取消",IDCANCEL,118,189,32,6,NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT8,8,51,87,13,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON      "存储数据",IDC_Button3,205,203,86,19,NOT WS_TABSTOP
+    LTEXT           "生产批次：",IDC_STATIC7,9,9,36,10
+    EDITTEXT        IDC_EDIT9,9,21,84,15,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    CONTROL         "   白 卡 扫 描",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT,296,183,54,13
+END
+
+IDD_MODIFITEM_DIALOG DIALOGEX 0, 0, 196, 105
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,26,86,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,86,50,14
+    EDITTEXT        IDC_EDIT1,56,5,45,14,ES_AUTOHSCROLL
+    LTEXT           "序号：",IDC_STATIC,8,11,24,9
+    EDITTEXT        IDC_EDIT5,55,24,75,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "TELNUM：",IDC_STATIC,7,28,38,9
+    EDITTEXT        IDC_EDIT6,55,44,105,14,ES_AUTOHSCROLL
+    LTEXT           "IMEI：",IDC_STATIC,7,48,38,9
+    EDITTEXT        IDC_EDIT7,55,64,132,14,ES_AUTOHSCROLL
+    LTEXT           "CCID：",IDC_STATIC,6,68,38,9
+END
+
+IDD_LOCK_DIALOG DIALOGEX 0, 0, 147, 65
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,14,38,50,14,NOT WS_TABSTOP
+    PUSHBUTTON      "取消",IDCANCEL,84,38,50,14,NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,60,18,74,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "PASSWORD：",IDC_STATIC,7,20,46,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ThreeItemPacking.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "ThreeItemPacking.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "翻译", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_THREEITEMPACKING_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 397
+    END
+
+    IDD_MODIFITEM_DIALOG, DIALOG
+    BEGIN
+        TOPMARGIN, 1
+    END
+
+    IDD_LOCK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 ThreeItemPacking(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\ThreeItemPacking.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

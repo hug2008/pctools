@@ -1,0 +1,70 @@
+# Microsoft Developer Studio Generated Dependency File, included by Grid.mak
+
+.\ChildFrm.cpp : \
+	".\ChildFrm.h"\
+	".\Grid.h"\
+	
+
+.\Grid.cpp : \
+	"..\ALXGrid\ALXButtonCtrl.h"\
+	"..\ALXGrid\ALXCellCtrl.h"\
+	"..\ALXGrid\ALXCellMetrics.h"\
+	"..\ALXGrid\ALXComboBoxCtrl.h"\
+	"..\ALXGrid\ALXEditCtrl.h"\
+	"..\ALXGrid\ALXGrid.h"\
+	"..\alxgrid\alxgrid.inl"\
+	"..\ALXGrid\ALXGridCore.h"\
+	"..\alxgrid\alxgridcore.inl"\
+	"..\ALXGrid\ALXGridDefinitions.h"\
+	"..\ALXGrid\ALXGridView.h"\
+	"..\ALXGrid\ALXSplitterWnd.h"\
+	".\ChildFrm.h"\
+	".\Grid.h"\
+	".\GridDoc.h"\
+	".\GridView.h"\
+	".\MainFrm.h"\
+	
+
+.\Grid.rc : \
+	"..\ALXGrid\ALXGrid.rc"\
+	"..\ALXGrid\res\Grid.rc2"\
+	"..\ALXGrid\res\HResize.cur"\
+	".\res\bitmap3.bmp"\
+	".\res\Grid.ico"\
+	".\res\Grid.rc2"\
+	".\res\GridDoc.ico"\
+	".\res\Toolbar.bmp"\
+	
+
+.\GridDoc.cpp : \
+	".\Grid.h"\
+	".\GridDoc.h"\
+	
+
+.\GridView.cpp : \
+	"..\ALXGrid\ALXButtonCtrl.h"\
+	"..\ALXGrid\ALXCellCtrl.h"\
+	"..\ALXGrid\ALXCellMetrics.h"\
+	"..\ALXGrid\ALXComboBoxCtrl.h"\
+	"..\ALXGrid\ALXEditCtrl.h"\
+	"..\ALXGrid\ALXGrid.h"\
+	"..\alxgrid\alxgrid.inl"\
+	"..\ALXGrid\ALXGridCore.h"\
+	"..\alxgrid\alxgridcore.inl"\
+	"..\ALXGrid\ALXGridDefinitions.h"\
+	"..\ALXGrid\ALXGridView.h"\
+	"..\ALXGrid\ALXSplitterWnd.h"\
+	".\Grid.h"\
+	".\GridDoc.h"\
+	".\GridView.h"\
+	
+
+.\MainFrm.cpp : \
+	".\Grid.h"\
+	".\MainFrm.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\StdAfx.h"\
+	

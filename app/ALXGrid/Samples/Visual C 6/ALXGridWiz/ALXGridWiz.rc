@@ -1,0 +1,490 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "#include ""afxres.rc""  // Standard components\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Grid.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,3,0,0
+ PRODUCTVERSION 1,3,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ALXGRID AppWizard\0"
+            VALUE "FileVersion", "1, 3, 0, 0\0"
+            VALUE "InternalName", "ALXGRID\0"
+            VALUE "LegalCopyright", "Copyright © 2000 - 2002 by Alexey Dolgachov\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ALXGRID.DLL\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ALXGrid AppWizard\0"
+            VALUE "ProductVersion", "1, 3, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEMPLATE
+//
+
+NEWPROJ.INF             TEMPLATE DISCARDABLE    "template\\newproj.inf"
+CONFIRM.INF             TEMPLATE DISCARDABLE    "template\\confirm.inf"
+LOC_ENU.RC              TEMPLATE DISCARDABLE    "template\\loc_enu.rc"
+DLGLOC_ENU.RC           TEMPLATE DISCARDABLE    "template\\dlgloc_enu.rc"
+DOC_ENU.ICO             TEMPLATE DISCARDABLE    "template\\doc_enu.ico"
+ROOT_ENU.CNT            TEMPLATE DISCARDABLE    "template\\root_enu.cnt"
+ROOT_ENU.HPJ            TEMPLATE DISCARDABLE    "template\\root_enu.hpj"
+AFXDLG_ENU.RTF          TEMPLATE DISCARDABLE    "template\\afxdlg_enu.rtf"
+AFXCORE_ENU.RTF         TEMPLATE DISCARDABLE    "template\\afxcore_enu.rtf"
+AFXPRINT_ENU.RTF        TEMPLATE DISCARDABLE    "template\\afxprint_enu.rtf"
+AFXOLECL_ENU.RTF        TEMPLATE DISCARDABLE    "template\\afxolecl_enu.rtf"
+AFXOLESV_ENU.RTF        TEMPLATE DISCARDABLE    "template\\afxolesv_enu.rtf"
+AFXDB_ENU.RTF           TEMPLATE DISCARDABLE    "template\\afxdb_enu.rtf"
+SCMENU_ENU.BMP          TEMPLATE DISCARDABLE    "template\\scmenu_enu.bmp"
+APPEXIT_ENU.BMP         TEMPLATE DISCARDABLE    "template\\appexit_enu.bmp"
+HLPSBAR_ENU.BMP         TEMPLATE DISCARDABLE    "template\\hlpsbar_enu.bmp"
+DLGROOT.CLW             TEMPLATE DISCARDABLE    "template\\dlgroot.clw"
+ROOT.CLW                TEMPLATE DISCARDABLE    "template\\root.clw"
+README.TXT              TEMPLATE DISCARDABLE    "template\\readme.txt"
+DLGROOT.H               TEMPLATE DISCARDABLE    "template\\dlgroot.h"
+DLGROOT.CPP             TEMPLATE DISCARDABLE    "template\\dlgroot.cpp"
+DIALOG.H                TEMPLATE DISCARDABLE    "template\\dialog.h"
+DIALOG.CPP              TEMPLATE DISCARDABLE    "template\\dialog.cpp"
+ROOT.H                  TEMPLATE DISCARDABLE    "template\\root.h"
+ROOT.CPP                TEMPLATE DISCARDABLE    "template\\root.cpp"
+STDAFX.H                TEMPLATE DISCARDABLE    "template\\stdafx.h"
+STDAFX.CPP              TEMPLATE DISCARDABLE    "template\\stdafx.cpp"
+FRAME.H                 TEMPLATE DISCARDABLE    "template\\frame.h"
+FRAME.CPP               TEMPLATE DISCARDABLE    "template\\frame.cpp"
+CHILDFRM.H              TEMPLATE DISCARDABLE    "template\\childfrm.h"
+CHILDFRM.CPP            TEMPLATE DISCARDABLE    "template\\childfrm.cpp"
+DOC.H                   TEMPLATE DISCARDABLE    "template\\doc.h"
+DOC.CPP                 TEMPLATE DISCARDABLE    "template\\doc.cpp"
+VIEW.H                  TEMPLATE DISCARDABLE    "template\\view.h"
+VIEW.CPP                TEMPLATE DISCARDABLE    "template\\view.cpp"
+WNDVIEW.H               TEMPLATE DISCARDABLE    "template\\wndview.h"
+WNDVIEW.CPP             TEMPLATE DISCARDABLE    "template\\wndview.cpp"
+ROOT.REG                TEMPLATE DISCARDABLE    "template\\root.reg"
+ROOT.ODL                TEMPLATE DISCARDABLE    "template\\root.odl"
+RECSET.H                TEMPLATE DISCARDABLE    "template\\recset.h"
+RECSET.CPP              TEMPLATE DISCARDABLE    "template\\recset.cpp"
+SRVRITEM.H              TEMPLATE DISCARDABLE    "template\\srvritem.h"
+SRVRITEM.CPP            TEMPLATE DISCARDABLE    "template\\srvritem.cpp"
+IPFRAME.H               TEMPLATE DISCARDABLE    "template\\ipframe.h"
+IPFRAME.CPP             TEMPLATE DISCARDABLE    "template\\ipframe.cpp"
+CNTRITEM.H              TEMPLATE DISCARDABLE    "template\\cntritem.h"
+CNTRITEM.CPP            TEMPLATE DISCARDABLE    "template\\cntritem.cpp"
+ROOT.R                  TEMPLATE DISCARDABLE    "template\\root.r"
+DLGRES.H                TEMPLATE DISCARDABLE    "template\\dlgres.h"
+DLGALL.RC               TEMPLATE DISCARDABLE    "template\\dlgall.rc"
+RESOURCE.H              TEMPLATE DISCARDABLE    "template\\resource.h"
+ALL.RC                  TEMPLATE DISCARDABLE    "template\\all.rc"
+ROOT.RC2                TEMPLATE DISCARDABLE    "template\\root.rc2"
+ROOT.ICO                TEMPLATE DISCARDABLE    "template\\root.ico"
+TBA__.BMP               TEMPLATE DISCARDABLE    "template\\tba__.bmp"
+TBA_I.BMP               TEMPLATE DISCARDABLE    "template\\tba_i.bmp"
+TBAH_.BMP               TEMPLATE DISCARDABLE    "template\\tbah_.bmp"
+TBAHI.BMP               TEMPLATE DISCARDABLE    "template\\tbahi.bmp"
+TBD__.BMP               TEMPLATE DISCARDABLE    "template\\tbd__.bmp"
+TBDH_.BMP               TEMPLATE DISCARDABLE    "template\\tbdh_.bmp"
+TBR__.BMP               TEMPLATE DISCARDABLE    "template\\tbr__.bmp"
+TBR_I.BMP               TEMPLATE DISCARDABLE    "template\\tbr_i.bmp"
+TBRH_.BMP               TEMPLATE DISCARDABLE    "template\\tbrh_.bmp"
+TBRHI.BMP               TEMPLATE DISCARDABLE    "template\\tbrhi.bmp"
+DLGROOT.CNT             TEMPLATE DISCARDABLE    "template\\dlgroot.cnt"
+MAKEHELP.BAT            TEMPLATE DISCARDABLE    "template\\makehelp.bat"
+FILENEW.BMP             TEMPLATE DISCARDABLE    "template\\filenew.bmp"
+FILEOPEN.BMP            TEMPLATE DISCARDABLE    "template\\fileopen.bmp"
+FILEPRNT.BMP            TEMPLATE DISCARDABLE    "template\\fileprnt.bmp"
+FILESAVE.BMP            TEMPLATE DISCARDABLE    "template\\filesave.bmp"
+EDITCOPY.BMP            TEMPLATE DISCARDABLE    "template\\editcopy.bmp"
+EDITCUT.BMP             TEMPLATE DISCARDABLE    "template\\editcut.bmp"
+EDITPAST.BMP            TEMPLATE DISCARDABLE    "template\\editpast.bmp"
+EDITUNDO.BMP            TEMPLATE DISCARDABLE    "template\\editundo.bmp"
+CURARW4.BMP             TEMPLATE DISCARDABLE    "template\\curarw4.bmp"
+CURARW2.BMP             TEMPLATE DISCARDABLE    "template\\curarw2.bmp"
+CURHELP.BMP             TEMPLATE DISCARDABLE    "template\\curhelp.bmp"
+SCMAX.BMP               TEMPLATE DISCARDABLE    "template\\scmax.bmp"
+SCMIN.BMP               TEMPLATE DISCARDABLE    "template\\scmin.bmp"
+BULLET.BMP              TEMPLATE DISCARDABLE    "template\\bullet.bmp"
+HLPTBAR.BMP             TEMPLATE DISCARDABLE    "template\\hlptbar.bmp"
+RECFIRST.BMP            TEMPLATE DISCARDABLE    "template\\recfirst.bmp"
+RECPREV.BMP             TEMPLATE DISCARDABLE    "template\\recprev.bmp"
+RECNEXT.BMP             TEMPLATE DISCARDABLE    "template\\recnext.bmp"
+RECLAST.BMP             TEMPLATE DISCARDABLE    "template\\reclast.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ALXGRID             ICON    DISCARDABLE     "res\\ALXGrid.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_FLAG                BITMAP  DISCARDABLE     "res\\flag.bmp"
+IDB_FON                 BITMAP  DISCARDABLE     "res\\fon.bmp"
+IDB_TYPECTRL            BITMAP  DISCARDABLE     "res\\typectrl.bmp"
+IDB_GRID                BITMAP  DISCARDABLE     "res\\grid.bmp"
+IDB_DLGGRID             BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_GRIDHEAD            BITMAP  DISCARDABLE     "res\\gridhead.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CLASSES DIALOG DISCARDABLE  0, 0, 303, 197
+STYLE DS_CONTROL | DS_CONTEXTHELP | WS_CHILD | WS_TABSTOP
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "AppWizard creates the following &classes for you:",
+                    IDC_STATIC,144,3,153,16
+    LISTBOX         CG_IDC_CLASS_LIST,144,18,153,106,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "C&lass name:",IDC_STATIC,144,126,72,8
+    EDITTEXT        CG_IDC_CLASS_NAME,144,138,72,12,ES_AUTOHSCROLL
+    LTEXT           "H&eader file:",IDC_HEADERFILE,225,126,90,8
+    EDITTEXT        CG_IDC_HFILE,225,138,72,12,ES_AUTOHSCROLL
+    LTEXT           "B&ase class:",IDC_BASECLASS,144,158,72,8
+    EDITTEXT        CG_IDC_BASE_CLASS,144,170,72,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "&Implementation file:",IDC_IMPLFILE,225,158,90,8
+    EDITTEXT        CG_IDC_IFILE,225,170,72,12,ES_AUTOHSCROLL
+END
+
+IDD_GRIDHEAD DIALOG DISCARDABLE  0, 0, 308, 197
+STYLE DS_CONTROL | DS_CONTEXTHELP | WS_CHILD | WS_TABSTOP
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "",IDC_STATIC_FRAME,148,2,151,177,SS_SUNKEN
+END
+
+IDD_GRIDSTYLE DIALOG DISCARDABLE  0, 0, 303, 197
+STYLE DS_CONTROL | DS_CONTEXTHELP | WS_CHILD | WS_TABSTOP
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Path to ALXGrid library",IDC_STATIC,148,3,147,14
+    EDITTEXT        IDC_EDITPATH,148,18,147,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BTNBROWSE,231,36,64,16
+    CONTROL         "Flat",IDC_CHCKFLAT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,161,78,85,14
+    CONTROL         "Row select",IDC_CHCKROWSEL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,161,94,85,14
+    LTEXT           "What grid window style your include ?",IDC_STATIC,148,
+                    62,147,14
+END
+
+IDD_GRIDPREV DIALOG DISCARDABLE  0, 0, 265, 199
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Preview"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "",IDC_STATIC_FRAME,2,3,261,173,SS_SUNKEN
+    DEFPUSHBUTTON   "OK",IDOK,66,181,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,148,181,50,14
+END
+
+IDD_PROPPAGE_GENERAL DIALOG DISCARDABLE  0, 0, 210, 82
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "General"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Title",IDC_STATIC,9,15,26,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_TITLE,49,15,151,12,ES_AUTOHSCROLL
+    LTEXT           "Width",IDC_STATIC,9,35,26,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_WIDTH,49,35,26,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "ID",IDC_STATIC,9,55,26,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_ID,49,55,151,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,3,0,204,77
+END
+
+IDD_PROPPAGE_ALIGN DIALOG DISCARDABLE  0, 0, 210, 82
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Align"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Head cell align",IDC_STATIC,3,3,100,74
+    CONTROL         "Left",IDC_RADIO_HALIGN1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,17,72,12
+    CONTROL         "Right",IDC_RADIO_HALIGN2,"Button",BS_AUTORADIOBUTTON,13,
+                    37,72,12
+    CONTROL         "Center",IDC_RADIO_HALIGN3,"Button",BS_AUTORADIOBUTTON,
+                    13,57,72,12
+    GROUPBOX        "Colunm cells align",IDC_STATIC,107,3,100,74
+    CONTROL         "Left",IDC_RADIO_CALIGN1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,122,17,72,12
+    CONTROL         "Right",IDC_RADIO_CALIGN2,"Button",BS_AUTORADIOBUTTON,
+                    122,37,72,12
+    CONTROL         "Center",IDC_RADIO_CALIGN3,"Button",BS_AUTORADIOBUTTON,
+                    122,57,72,12
+END
+
+IDD_PROPPAGE_CONTROL DIALOG DISCARDABLE  0, 0, 210, 82
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Column cells control"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,3,0,204,77
+    GROUPBOX        "",IDC_STATIC,9,25,62,47
+    GROUPBOX        "",IDC_STATIC,81,8,119,30
+    GROUPBOX        "",IDC_STATIC,81,42,119,30
+    CONTROL         "NONE",IDC_RADIO_CTRL1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,8,62,12
+    CONTROL         "EDITBOX",IDC_RADIO_CTRL2,"Button",BS_AUTORADIOBUTTON,13,
+                    24,48,12
+    CONTROL         "CHECKBOX",IDC_RADIO_CTRL3,"Button",BS_AUTORADIOBUTTON,
+                    86,8,57,12
+    CONTROL         "COMBOBOX",IDC_RADIO_CTRL4,"Button",BS_AUTORADIOBUTTON,
+                    86,41,57,12
+    CONTROL         "Left",IDC_RADIO_EALIGN1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,21,36,38,12
+    CONTROL         "Right",IDC_RADIO_EALIGN2,"Button",BS_AUTORADIOBUTTON,21,
+                    47,38,12
+    CONTROL         "Center",IDC_RADIO_EALIGN3,"Button",BS_AUTORADIOBUTTON,
+                    21,57,38,12
+    CONTROL         "2-state",IDC_RADIO_CSTATE1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,94,21,35,12
+    CONTROL         "3-state",IDC_RADIO_CSTATE2,"Button",BS_AUTORADIOBUTTON,
+                    150,21,35,12
+    CONTROL         "Dropdown",IDC_RADIO_CBDROP1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,94,55,46,12
+    CONTROL         "Droplist",IDC_RADIO_CBDROP2,"Button",BS_AUTORADIOBUTTON,
+                    150,55,43,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_GRIDPREV, DIALOG
+    BEGIN
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_PROPPAGE_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 207
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_PROPPAGE_ALIGN, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 207
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_PROPPAGE_CONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 207
+        BOTTOMMARGIN, 79
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_GRIDHEAD TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_BTN_ADDCOL
+    BUTTON      ID_BTN_EDITCOL
+    BUTTON      ID_BTN_DELCOL
+    SEPARATOR
+    BUTTON      ID_BTN_MOVEUP
+    BUTTON      ID_BTN_MOVEDOWN
+    SEPARATOR
+    BUTTON      ID_BTN_PREVIEWGRID
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_HRESIZE      CURSOR  DISCARDABLE     "res\\HResize.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BTN_ADDCOL           "Add new column\nAdd new column"
+    ID_BTN_PREVIEWGRID      "Preview grig\nPreview grid"
+    ID_BTN_DELCOL           "Delete column\nDelete column"
+    ID_BTN_EDITCOL          "Edit column\nEdit column"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROPSHT_CAPTION     "Column"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BTN_MOVEUP           "Move Up\nMove Up"
+    ID_BTN_MOVEDOWN         "Move Down\nMoveDown"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+#include "afxres.rc"  // Standard components
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

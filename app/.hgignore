@@ -1,0 +1,9 @@
+syntax: glob
+ipch/*
+*.sdf
+Debug/*
+Release/*
+*.tlog
+*.obj
+*.suo
+*.htm

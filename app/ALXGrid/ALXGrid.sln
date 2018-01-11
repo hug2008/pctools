@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALXGrid", "ALXGrid.vcproj", "{356F4D3D-6F63-49FE-986E-6925517C630B}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Debug static
+		ConfigName.2 = Pseudo_Debug
+		ConfigName.3 = Release
+		ConfigName.4 = Release static
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{356F4D3D-6F63-49FE-986E-6925517C630B}.Debug.ActiveCfg = Debug|Win32
+		{356F4D3D-6F63-49FE-986E-6925517C630B}.Debug.Build.0 = Debug|Win32
+		{356F4D3D-6F63-49FE-986E-6925517C630B}.Debug static.ActiveCfg = Debug static|Win32
+		{356F4D3D-6F63-49FE-986E-6925517C630B}.Debug static.Build.0 = Debug static|Win32
+		{356F4D3D-6F63-49FE-986E-6925517C630B}.Pseudo_Debug.ActiveCfg = Pseudo_Debug|Win32
+		{356F4D3D-6F63-49FE-986E-6925517C630B}.Pseudo_Debug.Build.0 = Pseudo_Debug|Win32
+		{356F4D3D-6F63-49FE-986E-6925517C630B}.Release.ActiveCfg = Release|Win32
+		{356F4D3D-6F63-49FE-986E-6925517C630B}.Release.Build.0 = Release|Win32
+		{356F4D3D-6F63-49FE-986E-6925517C630B}.Release static.ActiveCfg = Release static|Win32
+		{356F4D3D-6F63-49FE-986E-6925517C630B}.Release static.Build.0 = Release static|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

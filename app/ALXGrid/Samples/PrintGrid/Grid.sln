@@ -1,0 +1,42 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Grid", "Grid.vcproj", "{ACCC416D-6F3A-4057-BB34-664ABBFF0FEB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALXGrid", "..\..\ALXGrid.vcproj", "{5F5703AD-0989-45CE-9E57-ED8B6B671719}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Debug static
+		ConfigName.2 = Pseudo_Debug
+		ConfigName.3 = Release
+		ConfigName.4 = Release static
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{ACCC416D-6F3A-4057-BB34-664ABBFF0FEB}.Debug.ActiveCfg = Debug|Win32
+		{ACCC416D-6F3A-4057-BB34-664ABBFF0FEB}.Debug.Build.0 = Debug|Win32
+		{ACCC416D-6F3A-4057-BB34-664ABBFF0FEB}.Debug static.ActiveCfg = Debug|Win32
+		{ACCC416D-6F3A-4057-BB34-664ABBFF0FEB}.Debug static.Build.0 = Debug|Win32
+		{ACCC416D-6F3A-4057-BB34-664ABBFF0FEB}.Pseudo_Debug.ActiveCfg = Debug|Win32
+		{ACCC416D-6F3A-4057-BB34-664ABBFF0FEB}.Pseudo_Debug.Build.0 = Debug|Win32
+		{ACCC416D-6F3A-4057-BB34-664ABBFF0FEB}.Release.ActiveCfg = Release|Win32
+		{ACCC416D-6F3A-4057-BB34-664ABBFF0FEB}.Release.Build.0 = Release|Win32
+		{ACCC416D-6F3A-4057-BB34-664ABBFF0FEB}.Release static.ActiveCfg = Release|Win32
+		{ACCC416D-6F3A-4057-BB34-664ABBFF0FEB}.Release static.Build.0 = Release|Win32
+		{5F5703AD-0989-45CE-9E57-ED8B6B671719}.Debug.ActiveCfg = Debug|Win32
+		{5F5703AD-0989-45CE-9E57-ED8B6B671719}.Debug.Build.0 = Debug|Win32
+		{5F5703AD-0989-45CE-9E57-ED8B6B671719}.Debug static.ActiveCfg = Debug static|Win32
+		{5F5703AD-0989-45CE-9E57-ED8B6B671719}.Debug static.Build.0 = Debug static|Win32
+		{5F5703AD-0989-45CE-9E57-ED8B6B671719}.Pseudo_Debug.ActiveCfg = Pseudo_Debug|Win32
+		{5F5703AD-0989-45CE-9E57-ED8B6B671719}.Pseudo_Debug.Build.0 = Pseudo_Debug|Win32
+		{5F5703AD-0989-45CE-9E57-ED8B6B671719}.Release.ActiveCfg = Release|Win32
+		{5F5703AD-0989-45CE-9E57-ED8B6B671719}.Release.Build.0 = Release|Win32
+		{5F5703AD-0989-45CE-9E57-ED8B6B671719}.Release static.ActiveCfg = Release static|Win32
+		{5F5703AD-0989-45CE-9E57-ED8B6B671719}.Release static.Build.0 = Release static|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

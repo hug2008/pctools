@@ -1,0 +1,1 @@
+for /r %cd%\ %%i in (*.h *.c *.cpp *.rc *.vcproj) do @echo %%~fi >>%cd%\list.txt
